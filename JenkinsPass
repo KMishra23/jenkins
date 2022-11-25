@@ -15,7 +15,7 @@ pipeline {
         stage('Test Set 1(Pass)') {
             steps {
                 sh "chmod u+x unitTest1.py"
-                sh "unitTest1.py"
+                sh "./unitTest1.py"
             }
         }
     } 
