@@ -8,20 +8,20 @@ pipeline {
         }
         stage('Build Code') {
             steps {
-                // bat "chmod u+x armstrong.py"
-                bat "./armstrong.py"
+                sh "chmod u+x armstrong.py"
+                sh "./armstrong.py"
             }
         }
         stage('Test Set 1(Pass)') {
             steps {
-                // bat "chmod u+x unitTest1.py"
-                bat "./unitTest1.py"
+                sh "chmod u+x unitTest1.py"
+                sh "./unitTest1.py"
             }
         }
         stage('Test Set 2(Fail)') {
             steps {
-                // bat "chmod u+x unitTest2.py"
-                bat "./unitTest2.py"
+                sh "chmod u+x unitTest2.py"
+                sh "./unitTest2.py"
             }
         }
     } 
