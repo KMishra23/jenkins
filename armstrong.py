@@ -1,3 +1,5 @@
+#!/usr/bin/python
+
 def order(x):
 	n = 0
 	while (x != 0):
